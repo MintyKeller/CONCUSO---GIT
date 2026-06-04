@@ -1,4 +1,4 @@
-/*
+
 -- DDL DATA DEFINITION LANGUAGE
 DROP TABLE IF EXISTS salvo;
 DROP TABLE IF EXISTS seguidores;
@@ -251,4 +251,3 @@ SELECT
 FROM album
 INNER JOIN musica ON album.id_album = musica.id_album;
 
-*/
