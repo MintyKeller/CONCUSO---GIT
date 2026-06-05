@@ -251,3 +251,4 @@ SELECT
 FROM album
 INNER JOIN musica ON album.id_album = musica.id_album;
 
+
