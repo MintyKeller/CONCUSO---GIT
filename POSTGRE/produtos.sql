@@ -289,3 +289,103 @@ FROM album a
 INNER JOIN musica m ON a.id_album = m.id_album
 WHERE a.ano_lancamento BETWEEN 1990 AND 1999
   AND a.id_album IN (2, 5, 7, 9);
+
+  -- FULL JOIN 
+SELECT 
+    art.id_artista,
+    art.nome AS nome_artista,
+    alb.nome AS nome_album,
+    alb.ano_lancamento
+FROM artista art
+FULL JOIN album alb ON art.id_artista = alb.id_artista
+ORDER BY art.id_artista;
+
+-- INNER JOIN
+SELECT 
+    art.nome AS artista, 
+    alb.nome AS album
+FROM artista art
+INNER JOIN album alb ON art.id_artista = alb.id_artista
+ORDER BY art.nome;
+
+-- LEFT JOIN
+SELECT 
+    art.nome AS artista, 
+    alb.nome AS album
+FROM artista art
+LEFT JOIN album alb ON art.id_artista = alb.id_artista
+ORDER BY art.nome;
+
+-- RIGHT JOIN 
+SELECT 
+    art.nome AS artista, 
+    alb.nome AS album
+FROM artista art
+RIGHT JOIN album alb ON art.id_artista = alb.id_artista
+ORDER BY alb.nome;
+
+--UNION 
+SELECT 'Artista' AS tipo, nome 
+FROM artista 
+WHERE nome LIKE '%V%'
+
+UNION
+
+SELECT 'Álbum' AS tipo, nome 
+FROM album 
+WHERE nome LIKE '%V%'
+ORDER BY nome;
+
+--GROUP BY E HAVING 
+SELECT 
+    alb.nome AS nome_album, --ALIAS
+    COUNT(mus.id_musica) AS quantidade_musicas
+FROM album alb
+INNER JOIN musica mus ON alb.id_album = mus.id_album
+GROUP BY alb.nome
+HAVING COUNT(mus.id_musica) > 5 --CONDITION
+ORDER BY quantidade_musicas DESC;
+
+-- EXISTS
+SELECT art.id_artista, art.nome 
+FROM artista art
+WHERE EXISTS (
+    SELECT 1 
+    FROM album alb 
+    WHERE alb.id_artista = art.id_artista 
+      AND alb.ano_lancamento BETWEEN 1990 AND 1999
+);
+
+--CASE
+SELECT 
+    nome AS nome_musica, 
+    duracao AS segundos,
+    CASE 
+        WHEN duracao < 180 THEN 'Música Curta'
+        WHEN duracao BETWEEN 180 AND 300 THEN 'Música Normal'
+        ELSE 'Música Longa (Épica)'
+    END AS classificacao
+FROM musica
+ORDER BY duracao DESC;
+
+-- TRIGGERS (TIPO STORED PROCEDURE, SO QUE AO INVES DE SER CHAMADA EH ATIVADA POR UM EVENTO)
+CREATE OR REPLACE FUNCTION atualiza_tempo_album()
+RETURNS TRIGGER AS $$
+BEGIN
+    -- NEW representa a linha da música que acabou de ser inserida
+    UPDATE album
+    SET tempo_de_streaming = (
+        SELECT COALESCE(SUM(duracao), 0) 
+        FROM musica 
+        WHERE id_album = NEW.id_album
+    )
+    WHERE id_album = NEW.id_album;
+    
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_atualiza_tempo
+AFTER INSERT ON musica
+FOR EACH ROW
+EXECUTE FUNCTION atualiza_tempo_album();
