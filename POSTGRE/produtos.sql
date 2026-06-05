@@ -245,10 +245,47 @@ INSERT INTO musica (nome, duracao, id_album) VALUES
 SELECT * FROM album; 
 SELECT * FROM musica; 
 
+--JOIN TESTANDO, INNER JOIN
 SELECT 
     album.nome AS nome_do_album, 
     musica.nome AS nome_da_musica
 FROM album
 INNER JOIN musica ON album.id_album = musica.id_album;
 
+-- WHERE BETWEEN, TESTANDO 
 
+/*O BETWEEN serve para filtrar dados dentro de um intervalo inclusivo (ou seja, ele inclui os valores das pontas). É excelente para números, datas e anos.*/
+SELECT nome, ano_lancamento 
+FROM album 
+WHERE ano_lancamento BETWEEN 1990 AND 1999;
+
+
+-- WHERE IN TESTANDO 
+/*O IN permite que você passe uma lista de valores específicos no WHERE. Se o dado daquela linha bater com qualquer um dos itens da lista, ele retorna. É muito mais limpo do que escrever vários OR.*/
+SELECT nome, ano_lancamento 
+FROM album 
+WHERE ano_lancamento IN (1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999);
+
+SELECT nome, id_album 
+FROM musica 
+WHERE id_album IN (1, 3, 5); 
+--(Escrever isso com IN evita você ter que fazer WHERE id_album = 1 OR id_album = 3 OR id_album = 5).
+
+--SUBQUERY
+SELECT nome, id_album 
+FROM musica 
+WHERE id_album IN (
+    SELECT id_album 
+    FROM album 
+    WHERE ano_lancamento >= 2000
+);
+
+-- TESTE
+SELECT 
+    a.nome AS album, 
+    m.nome AS musica,
+    a.ano_lancamento
+FROM album a
+INNER JOIN musica m ON a.id_album = m.id_album
+WHERE a.ano_lancamento BETWEEN 1990 AND 1999
+  AND a.id_album IN (2, 5, 7, 9);
