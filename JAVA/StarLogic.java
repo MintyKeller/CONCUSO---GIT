@@ -288,10 +288,26 @@ for (int[] row : myNumbers) {
   }
 }
 
+//methods CALLINGS 
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+
+    myMethod2("Liam", 5);
+    myMethod2("Jenny", 8);
+    myMethod2("Anja", 31);
+
+    System.out.println(somaSe5(3));
+
+    int fatorial = factorial(10);
+    System.out.println(fatorial);
+
+
+
 
 
     }
-}; 
+
 
 /*
 Java data types: 
@@ -344,4 +360,73 @@ Escape character	 Result	    Description
 
 */
 
+// METHODS 
+/*
+A method is a block of code which only runs when it is called.
 
+You can pass data, known as parameters, into a method.
+
+Methods are used to perform certain actions, and they are also known as functions.
+
+Why use methods? To reuse code: define the code once, and use it many times.
+
+syntax:
+
+  static void myMethod() {
+    // code to be executed    myMethod("Liam", 5);
+    myMethod("Jenny", 8);
+    myMethod("Anja", 31);
+
+myMethod() is the name of the method
+static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+void means that this method does not have a return value. You will learn more about return values later in this chapter
+
+//executing a method inside the main 
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+  */
+// a method must be created outside de main(String[] args)
+ static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+// and called inside the main(String[] args)
+/*
+When a parameter is passed to the method, it is called an argument.
+So, from the example above: fname is a parameter, 
+while Liam, Jenny and Anja are arguments.
+*/
+ static void myMethod2(String fname, int age) {
+    System.out.println(fname + " is " + age);
+  }
+
+  // the methods can or not return a value,
+  //  when it does not, we use VOID as the return value,
+  //  but it can be int, char... etc
+  static int somaSe5(int x) {
+    return 5 + x;
+  }
+
+  //JAVA RECURSION 
+  /*
+
+    Recursion is the technique of making a function call itself. 
+    This technique provides a way to break complicated problems down 
+    into simpler problems which are easier to solve.
+  */
+
+     public static int factorial(int k) {
+    if (k > 0) {
+      return k * factorial(k - 1);
+    } else {
+      return 0;
+    }
+  }
+
+  }; //ending curly brace
