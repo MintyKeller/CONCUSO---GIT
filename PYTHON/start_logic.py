@@ -719,6 +719,10 @@ myfamily = {
   "child2" : child2,
   "child3" : child3
 }
+
+#ADDING A NESTED DICTIONARY INTO A DICTIONARY
+#main_dict['details'] = details_dict
+
 #accesing itens 
 print(myfamily["child2"]["name"])
 #looping int nested dictionarys 
@@ -1480,6 +1484,7 @@ txt = "The price is {} dollars"
 print(txt.format(price))
 
 
+#ITSS ENDEDDD paraboins 
 
 
 
