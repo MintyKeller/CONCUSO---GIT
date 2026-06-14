@@ -424,9 +424,16 @@ while Liam, Jenny and Anja are arguments.
      public static int factorial(int k) {
     if (k > 0) {
       return k * factorial(k - 1);
-    } else {
+    } else { //halting condition
       return 0;
     }
   }
+  /*
+  Just as loops can run into the problem of infinite looping, 
+  recursive methods can run into the problem of infinite recursion.
+   Infinite recursion is when the method never stops calling itself.
+    Every recursive method should have a halting condition, 
+    which is the condition where the method stops calling itself. 
+  */
 
   }; //ending curly brace
