@@ -1,0 +1,75 @@
+[ //array
+  { //objeto
+    //JSON normalmente nao tem comentários, mas esse aqui agora tem hehehehe
+    // Configurações do primeiro usuário
+    "nome": "João",
+    "idade": 25,
+    
+    /* A lista de linguagens que ele 
+       está aprendendo no momento 
+    */
+    "linguagens": ["Python", "JSON"]
+  },//VIRGULAAAAA 
+  {
+    // Configurações do segundo usuário
+    "nome": "Talita",
+    "idade": 18,
+    
+    /* A lista de linguagens que ele 
+       está aprendendo no momento 
+    */
+    "linguagens": ["Python", "JSON", "JS"]
+  }, 
+
+  ///////////////////////////////////////////////////////////////////////////
+
+  {
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+
+]
+
+  /* WHAT IS JSON
+  JSON stands for JavaScript Object Notation.
+
+  JSON is a plain text format for storing and transporting data.
+
+  JSON is similar to the syntax for creating JavaScript objects.
+
+  JSON is used to send, receive and store data.
+  */
+
+  /* WHY JSON
+  JSON is make it easy to send and store data between computers
+  JSON is text only and language independent 
+
+
+The syntax is derived from JavaScript object syntax, but JSON is text only.
+
+Code for reading and generating JSON data can be written in any programming language.
+
+The JSON format was originally specified by Douglas Crockford.
+  */
+
+  /*JSON and JavaScript
+  The JSON format is syntactically identical to the code for creating JavaScript objects.
+
+Because of this, a JavaScript program can easily convert JSON data into native JavaScript objects.
+JavaScript has a built in function for converting JSON strings into JavaScript objects:
+
+JSON.parse()   //DE JSON PRO JS
+
+
+JavaScript also has a built in function for converting an object into a JSON string:
+
+JSON.stringify() //DO JS PRO JSON 
+  */
+
+  
+
+
+

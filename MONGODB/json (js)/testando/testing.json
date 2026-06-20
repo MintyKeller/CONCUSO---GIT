@@ -1,0 +1,473 @@
+{
+  "artistas": [
+    {
+      "id": 1,
+      "email": "joaomano@gmail.com",
+      "nome": "João Manô",
+      "about": "João Manô é cantor, compositor e poeta brasileiro, com uma obra situada entre o indie e a música popular brasileira, marcada por lirismo, contemplação e uma espiritualidade encarnada no cotidiano.",
+      "foto_de_perfil": "fotoJoaoManô.jpg"
+    },
+    {
+      "id": 2,
+      "email": "thecranberries@example.com",
+      "nome": "The Cranberries",
+      "about": "Combining the melodic jangle of post-Smiths indie guitar pop with the lilting, trance-inducing sonic textures of late 80s dream pop and adding a slight Celtic tint...",
+      "foto_de_perfil": "fotoTheCranberries.jpg"
+    },
+    {
+      "id": 3,
+      "email": "rhcp@example.com",
+      "nome": "Red Hot Chili Peppers",
+      "about": "Banda norte-americana formada em Los Angeles, conhecida por misturar rock alternativo, funk, punk e elementos de rap.",
+      "foto_de_perfil": "fotoRHCP.jpg"
+    },
+    {
+      "id": 4,
+      "email": "u2@example.com",
+      "nome": "U2",
+      "about": "Grupo irlandês formado em Dublin, reconhecido mundialmente por seu rock atmosférico, letras reflexivas e engajamento em causas humanitárias.",
+      "foto_de_perfil": "fotoU2.jpg"
+    },
+    {
+      "id": 5,
+      "email": "coldplay@example.com",
+      "nome": "Coldplay",
+      "about": "Banda britânica de rock alternativo conhecida por melodias emotivas, arranjos grandiosos e letras que exploram amor, esperança, perda e superação.",
+      "foto_de_perfil": "fotoColdplay.jpg"
+    },
+    {
+      "id": 6,
+      "email": "pinkfloyd@example.com",
+      "nome": "Pink Floyd",
+      "about": "Uma das bandas mais influentes da história do rock progressivo, famosa por seus álbuns conceituais, composições extensas e experimentação sonora.",
+      "foto_de_perfil": "fotoPinkFloyd.jpg"
+    },
+    {
+      "id": 7,
+      "email": "weezer@example.com",
+      "nome": "Weezer",
+      "about": "Banda norte-americana de rock alternativo caracterizada por guitarras marcantes, letras bem-humoradas e referências à cultura nerd.",
+      "foto_de_perfil": "fotoWeezer.jpg"
+    },
+    {
+      "id": 8,
+      "email": "legiaourbana@example.com",
+      "nome": "Legião Urbana",
+      "about": "Uma das bandas mais importantes do rock brasileiro, liderada por Renato Russo. Suas músicas abordam política, existencialismo, juventude, amor e espiritualidade.",
+      "foto_de_perfil": "fotoLegiaoUrbana.jpg"
+    },
+    {
+      "id": 9,
+      "email": "skank@example.com",
+      "nome": "Skank",
+      "about": "Grupo mineiro que combinou rock, reggae, pop e música brasileira em uma sonoridade acessível e marcante.",
+      "foto_de_perfil": "fotoSkank.jpg"
+    },
+    {
+      "id": 10,
+      "email": "greenday@example.com",
+      "nome": "Green Day",
+      "about": "Banda norte-americana que popularizou o punk rock para uma nova geração nos anos 1990. Suas músicas unem energia, irreverência e comentários sobre juventude.",
+      "foto_de_perfil": "fotoGreenDay.jpg"
+    },
+    {
+      "id": 11,
+      "email": "thesmiths@example.com",
+      "nome": "The Smiths",
+      "about": "Grupo britânico de rock alternativo formado nos anos 1980, conhecido pela combinação das guitarras melódicas de Johnny Marr com as letras melancólicas de Morrissey.",
+      "foto_de_perfil": "fotoTheSmiths.jpg"
+    },
+    {
+      "id": 12,
+      "email": "calmara@example.com",
+      "nome": "Calmará",
+      "about": "Banda brasileira de indie folk e rock alternativo que constrói canções intimistas marcadas por reflexões sobre fé, relacionamentos, amadurecimento e esperança.",
+      "foto_de_perfil": "fotoCalmara.jpg"
+    },
+    {
+      "id": 13,
+      "email": "paralamas@example.com",
+      "nome": "Os Paralamas do Sucesso",
+      "about": "Uma das bandas mais importantes do rock brasileiro...",
+      "foto_de_perfil": "fotoParalamasDoSucesso.jpg"
+    }
+  ],
+  "albuns": [
+    {
+      "id": 1,
+      "nome": "Volver",
+      "ano_lancamento": 2020,
+      "foto_da_capa_url": "volver.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 1,
+      "musicas": [
+        {
+          "nome": "Volver",
+          "duracao": 214
+        },
+        {
+          "nome": "Temporais",
+          "duracao": 268
+        },
+        {
+          "nome": "Maturidade",
+          "duracao": 280
+        },
+        {
+          "nome": "Esperanca",
+          "duracao": 309
+        },
+        {
+          "nome": "Paciencia",
+          "duracao": 185
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Blood Sugar Sex Magik",
+      "ano_lancamento": 1991,
+      "foto_da_capa_url": "bloodSugarSexMagik.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 3,
+      "musicas": [
+        {
+          "nome": "The Power of Equality",
+          "duracao": 243
+        },
+        {
+          "nome": "If You Have to Ask",
+          "duracao": 216
+        },
+        {
+          "nome": "Breaking the Girl",
+          "duracao": 295
+        },
+        {
+          "nome": "Funky Monks",
+          "duracao": 323
+        },
+        {
+          "nome": "Suck My Kiss",
+          "duracao": 217
+        },
+        {
+          "nome": "I Could Have Lied",
+          "duracao": 244
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Parachutes",
+      "ano_lancamento": 2000,
+      "foto_da_capa_url": "parachutes.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 5,
+      "musicas": [
+        {
+          "nome": "Dont Panic",
+          "duracao": 136
+        },
+        {
+          "nome": "Shiver",
+          "duracao": 304
+        },
+        {
+          "nome": "Spies",
+          "duracao": 318
+        },
+        {
+          "nome": "Sparks",
+          "duracao": 227
+        },
+        {
+          "nome": "Yellow",
+          "duracao": 266
+        },
+        {
+          "nome": "Trouble",
+          "duracao": 273
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Atom Heart Mother",
+      "ano_lancamento": 1970,
+      "foto_da_capa_url": "atomHeartMother.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 6,
+      "musicas": [
+        {
+          "nome": "Atom Heart Mother",
+          "duracao": 1421
+        },
+        {
+          "nome": "If",
+          "duracao": 270
+        },
+        {
+          "nome": "Summer 68",
+          "duracao": 328
+        },
+        {
+          "nome": "Fat Old Sun",
+          "duracao": 323
+        },
+        {
+          "nome": "Alans Psychedelic Breakfast",
+          "duracao": 780
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Pinkerton",
+      "ano_lancamento": 1996,
+      "foto_da_capa_url": "pinkerton.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 7,
+      "musicas": [
+        {
+          "nome": "Tired Of Sex",
+          "duracao": 181
+        },
+        {
+          "nome": "Getchoo",
+          "duracao": 172
+        },
+        {
+          "nome": "No Other One",
+          "duracao": 181
+        },
+        {
+          "nome": "Why Bother?",
+          "duracao": 128
+        },
+        {
+          "nome": "Across The Sea",
+          "duracao": 272
+        },
+        {
+          "nome": "The Good Life",
+          "duracao": 257
+        },
+        {
+          "nome": "El Scorcho",
+          "duracao": 243
+        },
+        {
+          "nome": "Pink Triangle",
+          "duracao": 233
+        },
+        {
+          "nome": "Falling For You",
+          "duracao": 227
+        },
+        {
+          "nome": "Butterfly",
+          "duracao": 173
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Everybody Else Is Doing It, So Why Cant We",
+      "ano_lancamento": 1993,
+      "foto_da_capa_url": "everybody_else.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 2,
+      "musicas": [
+        {
+          "nome": "I Still Do",
+          "duracao": 197
+        },
+        {
+          "nome": "Dreams",
+          "duracao": 273
+        },
+        {
+          "nome": "Sunday ",
+          "duracao": 210
+        },
+        {
+          "nome": "Pretty",
+          "duracao": 136
+        },
+        {
+          "nome": "Waltzing Back",
+          "duracao": 217
+        },
+        {
+          "nome": "Not Sorry",
+          "duracao": 263
+        },
+        {
+          "nome": "Linger",
+          "duracao": 274
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "As Quatro Estações",
+      "ano_lancamento": 1989,
+      "foto_da_capa_url": "as_quatro_estacoes.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 8,
+      "musicas": [
+        {
+          "nome": "Ha Tempos",
+          "duracao": 198
+        },
+        {
+          "nome": "Pais E Filhos",
+          "duracao": 308
+        },
+        {
+          "nome": "Feedback Song For A Dying Friend",
+          "duracao": 325
+        },
+        {
+          "nome": "Quando O Sol Bater Na Janela Do Teu Quarto",
+          "duracao": 193
+        },
+        {
+          "nome": "Eu Era Um Lobisomem Juvenil",
+          "duracao": 406
+        },
+        {
+          "nome": "1965 Duas Tribos",
+          "duracao": 225
+        },
+        {
+          "nome": "Monte Castelo",
+          "duracao": 230
+        },
+        {
+          "nome": "Mauricio",
+          "duracao": 198
+        },
+        {
+          "nome": "Meninos E Meninas",
+          "duracao": 203
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "All That You Cant Leave Behind",
+      "ano_lancamento": 2000,
+      "foto_da_capa_url": "all_that_you_cant_leave_behind.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 4,
+      "musicas": [
+        {
+          "nome": "Beautiful Day",
+          "duracao": 248
+        },
+        {
+          "nome": "Stuck In A Moment You Cant Get Out Of",
+          "duracao": 273
+        },
+        {
+          "nome": "Elevation",
+          "duracao": 226
+        },
+        {
+          "nome": "Walk On",
+          "duracao": 296
+        },
+        {
+          "nome": "Kite",
+          "duracao": 264
+        },
+        {
+          "nome": "In A Little While",
+          "duracao": 220
+        },
+        {
+          "nome": "Wild Honey",
+          "duracao": 226
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Dookie",
+      "ano_lancamento": 1994,
+      "foto_da_capa_url": "dookie.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 10,
+      "musicas": [
+        {
+          "nome": "Burnout",
+          "duracao": 127
+        },
+        {
+          "nome": "Having a Blast",
+          "duracao": 164
+        },
+        {
+          "nome": "Chump",
+          "duracao": 174
+        },
+        {
+          "nome": "Longview",
+          "duracao": 233
+        },
+        {
+          "nome": "Welcome to Paradise",
+          "duracao": 224
+        },
+        {
+          "nome": "Pulling Teeth",
+          "duracao": 150
+        },
+        {
+          "nome": "Basket Case",
+          "duracao": 181
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Calmará",
+      "ano_lancamento": 2021,
+      "foto_da_capa_url": "calmara.jpg",
+      "tempo_de_streaming": 0,
+      "id_artista": 12,
+      "musicas": [
+        {
+          "nome": "Sereno do Alarido",
+          "duracao": 71
+        },
+        {
+          "nome": "Patrício, de Onde Vim",
+          "duracao": 198
+        },
+        {
+          "nome": "É de Manhã",
+          "duracao": 200
+        },
+        {
+          "nome": "Outra Vez Além Zabelê",
+          "duracao": 151
+        },
+        {
+          "nome": "Hillsamba",
+          "duracao": 196
+        },
+        {
+          "nome": "Volta a Alta Terra",
+          "duracao": 208
+        },
+        {
+          "nome": "Luzia",
+          "duracao": 204
+        }
+      ]
+    }
+  ]
+}
