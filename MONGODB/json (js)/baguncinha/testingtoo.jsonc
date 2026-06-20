@@ -70,6 +70,21 @@ JSON.stringify() //DO JS PRO JSON
   */
 
   
+// JSON.parse()
+/*
+O Caminho dos Dados (Passo a Passo)
+O Pedido (Fetch): O seu código em JavaScript faz um pedido para a internet: "Ei, servidor do Spotifile, me manda a lista de artistas!".
+
+A Viagem (String): O servidor web pega os dados do banco de dados dele. Só que a internet não consegue enviar um "objeto de JavaScript vivo" pelos cabos. Ela só consegue enviar texto puro. Então, o servidor transforma tudo em uma linha gigante de texto (uma String) formatada com aquelas aspas e colchetes do JSON e envia para você.
+
+A Chegada (Texto Puro): Quando o dado chega no seu JavaScript, ele chega como uma String comum. Se você tentar dar um .find() ou um .push() nela, vai dar erro, porque para o JavaScript aquilo é só um texto qualquer, igual a uma frase longa.
+
+A Mágica do JSON.parse(): É aqui que entra o comando que você leu. Você pega essa string de texto que veio da web e roda:
+
+JavaScript
+const dadosVivos = JSON.parse(textoQueVeioDaInternet);
+O JSON.parse() lê aquele texto, entende a estrutura e transforma em um Objeto/Array de verdade dentro da memória do JS. A partir desse milésimo de segundo, você pode voltar a usar .find(), .filter(), etc.
+*/
 
 
 

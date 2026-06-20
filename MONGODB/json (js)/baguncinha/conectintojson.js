@@ -209,3 +209,7 @@ const person = {
 
 // Stringify Object
 let text = JSON.stringify(person);
+
+//Imagine we received this text from a web server:
+//'{"name":"John", "age":30, "city":"New York"}'
+const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
